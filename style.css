@@ -1,0 +1,108 @@
+/*Zerando os espaçamentos automátios do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    /* HEADER */
+    --headerBackGroundColor: whitesmoke;
+    --logoMargin: auto 150px;
+    --betaLogoWidth: 110px;
+    /* HEADER */
+
+    /* BODY */
+    --bodyBackgroundColor: #000000;
+    /* BODY */
+
+    /* beBETAS */
+    --namesColor: rgb(255, 230, 0);
+    --imageWidth: 150px;
+    --imageGap: 15px;
+    --picturesMargin: 50px auto;
+    --display: grid;
+    
+    /* MARKETING */
+    --marketingMaxWidth: 350px;
+    
+    /* MARKETING */
+
+    /* PILOTS */
+    --pilotsMaxWidth: 525px;
+    /* PILOTS */
+
+    /* DEVELOPERS */
+    --developersMaxWidth: 850px;
+    /* DEVELOPERS */
+
+    /* STRATEGIC */
+    --strategicMaxWidth: 675px;
+    /* STRATEGIC */
+    
+    /* beBetas */
+}
+
+header {
+    padding: 15px;
+    background: var(--headerBackGroundColor);
+}
+
+body {
+    background: var(--bodyBackgroundColor);
+}
+
+#logo {
+    margin: var(--logoMargin);
+    width: var(--betaLogoWidth);
+}
+
+/* beBetas COMPONENTS*/
+.beBetas {
+    text-align: center;
+}
+
+.beBetas img {
+    width: var(--imageWidth);
+    border-radius: 25px;
+}
+
+.beBetas h1 {
+    color: var(--namesColor);
+}
+/* beBetas COMPONENTS END */
+
+.marketing {
+    max-width: var(--marketingMaxWidth);
+    margin: var(--picturesMargin);
+    text-align: center;
+    display: var(--display);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--imageGap);
+}
+
+.pilots {
+    max-width: var(--pilotsMaxWidth);
+    margin: var(--picturesMargin);
+    text-align: center;
+    display: var(--display);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--imageGap);
+}
+
+.developers {
+    max-width: var(--developersMaxWidth);
+    margin: var(--picturesMargin);
+    text-align: center;
+    display: var(--display);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: var(--imageGap);
+}
+
+.strategic {
+    max-width: var(--strategicMaxWidth);
+    margin: var(--picturesMargin);
+    text-align: center;
+    display: var(--display);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: var(--imageGap);
+}
